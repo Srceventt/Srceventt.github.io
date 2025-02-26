@@ -22,6 +22,18 @@
         <main class="container mt-4">
             <h1 class="h1">My Work</h1>
             <h2 class="h2">Works I Have Done</h2>
+            <audio id="myAudio" src="./Too Bad.mp3" autoplay></audio>
+            <script>
+                function playAudio() {
+                    const audio = document.getElementById('myAudio');
+                    if (audio && audio.paused) {
+                        const playPromise = audio.play();
+                    }
+                }
+                document.addEventListener('click', playAudio);
+                document.addEventListener('scroll', playAudio);
+                window.addEventListener('load', playAudio);
+            </script>
             <section class="project-section">
                 
                 <div class="project-card">

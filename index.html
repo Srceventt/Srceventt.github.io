@@ -9,10 +9,6 @@
     </head>
     <body>
         <header>
-            <audio id="myAudio" src="./Too Bad.mp3"></audio>
-            <script>
-                document.getElementById('myAudio').play();
-            </script>
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-links">
@@ -27,6 +23,18 @@
             <section class="about-me">
                 <h1 class="h1">About Me</h1>
                 <h2 class="h2">Who Am I</h2>
+                <audio id="myAudio" src="./Turn Of A Page.mp3" autoplay></audio>
+                <script>
+                    function playAudio() {
+                        const audio = document.getElementById('myAudio');
+                        if (audio && audio.paused) {
+                            const playPromise = audio.play();
+                        }
+                    }
+                    document.addEventListener('click', playAudio);
+                    document.addEventListener('scroll', playAudio);
+                    window.addEventListener('load', playAudio);
+                </script>
                 <div class="row">
                     <div class="col-md-7">
                         <p class="intromyself">My name is Wentao Yang, an exchange student from ShanghaiTech University, majoring in Computer Science.</p>
