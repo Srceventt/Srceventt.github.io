@@ -1,0 +1,188 @@
+/* Your CSS goes here! */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: grey;
+}
+
+.intromyself {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.3rem;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-top: 1rem;
+    color: rgb(155, 43, 207);
+}
+
+.interests {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: rgb(58, 19, 176);
+}
+
+.interests_content {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: rgb(58, 19, 176);
+}
+
+.icons {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: rgb(58, 19, 176);
+}
+
+.icons_content {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: rgb(58, 19, 176);
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-list, .period-list {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.achievement-list li, .period-list li {
+    margin-bottom: 0.5rem;
+}
+
+.research-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: white;
+}
+
+.research-table th,
+.research-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.research-table th {
+    background-color: #2c3e50;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.project-link:hover {
+    background-color: #2980b9;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.projects-list {
+    padding-left: 1.5rem;
+}
+
+.projects-list li {
+    margin-bottom: 0.5rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
