@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skills - Wentao Yang</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="styles.css" rel="stylesheet"/>
+        <style>
+            /* 进度条样式调整 */
+            .progress {
+                height: 25px !important; /* 增加进度条高度 */
+                margin-bottom: 15px;
+                border-radius: 5px;
+                background-color: #e9ecef;
+                overflow: hidden;
+            }
+
+            .progress-bar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                text-align: center;
+                font-size: 0.9rem; /* 稍微减小字体大小 */
+                font-weight: 500;
+                white-space: nowrap;
+                background-color: #2563eb;
+                transition: width 0.6s ease;
+            }
+
+            /* 确保技能名称与进度条之间有足够间隔 */
+            .skill-name {
+                margin-bottom: 5px;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-links">
+                        <a class="nav-link" href="index.html" style="font-size: 1.3rem;">About Me</a>
+                        <a class="nav-link" href="projects.html" style="font-size: 1.3rem;">Projects</a>
+                        <a class="nav-link" href="research.html" style="font-size: 1.3rem;">Research</a>
+                        <a class="nav-link active" href="skills.html" style="font-size: 1.3rem;">Skills</a>
+                        <a class="nav-link" href="#contact" style="font-size: 1.3rem;">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container mt-4">
+            <h1 class="page-title">Skills & Expertise</h1>
+            <p class="lead" style="font-size: 1.5rem; color: #4a5568;">A comprehensive overview of my technical skills, research capabilities, and language proficiency.</p>
+            
+            <section class="skills-section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                            <div class="skill-bars">
+                                <div class="skill-item">
+                                    <div class="skill-name">Python</div>
+                                    <label for="python-skill-progress" class="visually-hidden">Python skill level</label>
+                                    <div id="python-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Python skill level">Advanced</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">C/C++</div>
+                                    <label for="c-skill-progress" class="visually-hidden">C/C++ skill level</label>
+                                    <div id="c-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="C/C++ skill level">Proficient</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">MATLAB</div>
+                                    <label for="matlab-skill-progress" class="visually-hidden">MATLAB skill level</label>
+                                    <div id="matlab-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="MATLAB skill level">Proficient</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">JavaScript/HTML/CSS</div>
+                                    <label for="javascript-skill-progress" class="visually-hidden">JavaScript/HTML/CSS skill level</label>
+                                    <div id="javascript-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript/HTML/CSS skill level">Intermediate</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">SQL</div>
+                                    <label for="sql-skill-progress" class="visually-hidden">SQL skill level</label>
+                                    <div id="sql-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="SQL skill level">Intermediate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-laptop-code"></i> Frameworks & Libraries</h3>
+                            <div class="skill-bars">
+                                <div class="skill-item">
+                                    <div class="skill-name">PyTorch</div>
+                                    <label for="pytorch-skill-progress" class="visually-hidden">PyTorch skill level</label>
+                                    <div id="pytorch-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="PyTorch skill level">Proficient</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">TensorFlow</div>
+                                    <label for="tensorflow-skill-progress" class="visually-hidden">TensorFlow skill level</label>
+                                    <div id="tensorflow-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="TensorFlow skill level">Proficient</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Scikit-learn</div>
+                                    <label for="sklearn-skill-progress" class="visually-hidden">Scikit-learn skill level</label>
+                                    <div id="sklearn-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Scikit-learn skill level">Advanced</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Pandas/NumPy</div>
+                                    <label for="pandas-skill-progress" class="visually-hidden">Pandas/NumPy skill level</label>
+                                    <div id="pandas-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Pandas/NumPy skill level">Advanced</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">OpenCV</div>
+                                    <label for="opencv-skill-progress" class="visually-hidden">OpenCV skill level</label>
+                                    <div id="opencv-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="OpenCV skill level">Proficient</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-brain"></i> Research Skills</h3>
+                            <div class="skill-bars">
+                                <div class="skill-item">
+                                    <div class="skill-name">Computer Vision</div>
+                                    <label for="vision-skill-progress" class="visually-hidden">Computer Vision skill level</label>
+                                    <div id="vision-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Computer Vision skill level">Proficient</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Machine Learning</div>
+                                    <label for="ml-skill-progress" class="visually-hidden">Machine Learning skill level</label>
+                                    <div id="ml-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Machine Learning skill level">Advanced</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Data Analysis</div>
+                                    <label for="data-skill-progress" class="visually-hidden">Data Analysis skill level</label>
+                                    <div id="data-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Data Analysis skill level">Advanced</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Algorithm Development</div>
+                                    <label for="algo-skill-progress" class="visually-hidden">Algorithm Development skill level</label>
+                                    <div id="algo-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Algorithm Development skill level">Proficient</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Financial Modeling</div>
+                                    <label for="finance-skill-progress" class="visually-hidden">Financial Modeling skill level</label>
+                                    <div id="finance-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Financial Modeling skill level">Proficient</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-language"></i> Languages</h3>
+                            <div class="skill-bars">
+                                <div class="skill-item">
+                                    <div class="skill-name">Chinese (Native)</div>
+                                    <label for="chinese-skill-progress" class="visually-hidden">Chinese language level</label>
+                                    <div id="chinese-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Chinese language level">Native</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">English (TOEFL 100)</div>
+                                    <label for="english-skill-progress" class="visually-hidden">English language level</label>
+                                    <div id="english-skill-progress" class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="English language level">Fluent</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="tools-section mt-5">
+                <h2 class="section-title">Tools & Technologies</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-database"></i> Data Science</h3>
+                            <ul class="tool-list">
+                                <li>Jupyter Notebook</li>
+                                <li>Matplotlib/Seaborn</li>
+                                <li>SQL Databases</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-code-branch"></i> Development</h3>
+                            <ul class="tool-list">
+                                <li>Git/GitHub</li>
+                                <li>Docker</li>
+                                <li>Visual Studio Code</li>
+                                <li>PyCharm</li>
+                                <li>Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="certifications-section mt-5">
+                <h2 class="section-title">Awards & Achievements</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="skill-category">
+                            <div class="row align-items-center">
+                                <div class="col-md-1 text-center">
+                                    <i class="fas fa-trophy fa-2x award-icon"></i>
+                                </div>
+                                <div class="col-md-11">
+                                    <h3>Third Prize in Men's Team Bowling</h3>
+                                    <p>Shanghai Student Sunshine Sports League (Higher Education Division), 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact" class="mt-5 py-4">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Contact Me</h2>
+                <div class="row">
+                    <div class="contact text-center mb-4">
+                        <div class="contact-info">
+                            <h3><i class="fas fa-envelope"></i> Email: &nbsp <a href="mailto:yangwt2022@shanghaitech.edu.cn">yangwt2022@shanghaitech.edu.cn</a></h3>
+                            <p class="mt-4">Feel free to reach out for research collaborations, project inquiries, or just to connect!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center mt-4">
+                    <p>&copy; 2025 Wentao Yang. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.querySelectorAll('.progress-bar').forEach(bar => {
+                                setTimeout(() => {
+                                    bar.style.width = bar.getAttribute('aria-valuenow') + '%';
+                                }, 200);
+                            });
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                });
+                
+                document.querySelectorAll('.skill-category').forEach(category => {
+                    observer.observe(category);
+                });
+            });
+        </script>
+    </body>
+</html>

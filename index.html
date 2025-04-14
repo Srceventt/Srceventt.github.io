@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me</title>
+        <title>Wentao Yang - Computer Science Student</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link href="styles.css" rel="stylesheet"/>
     </head>
     <body>
@@ -12,61 +13,128 @@
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-links">
-                        <a class="nav-link active" href="index.html">About Me</a>
-                        <a class="nav-link" href="my-work.html">My Work</a>
+                        <a class="nav-link active" href="index.html" style="font-size: 1.3rem;">About Me</a>
+                        <a class="nav-link" href="projects.html" style="font-size: 1.3rem;">Projects</a>
+                        <a class="nav-link" href="research.html" style="font-size: 1.3rem;">Research</a>
+                        <a class="nav-link" href="skills.html" style="font-size: 1.3rem;">Skills</a>
+                        <a class="nav-link" href="#contact" style="font-size: 1.3rem;">Contact</a>
                     </div>
                 </div>
             </nav>
         </header>
 
         <main class="container mt-4">
-            <section class="about-me">
-                <h1 class="h1">About Me</h1>
-                <h2 class="h2">Who Am I</h2>
-                <audio id="myAudio" src="./Turn Of A Page.mp3" autoplay></audio>
-                <script>
-                    function playAudio() {
-                        const audio = document.getElementById('myAudio');
-                        if (audio && audio.paused) {
-                            const playPromise = audio.play();
-                        }
-                    }
-                    document.addEventListener('click', playAudio);
-                    document.addEventListener('scroll', playAudio);
-                    window.addEventListener('load', playAudio);
-                </script>
+            <section class="hero-section">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-name">Wentao Yang</h1>
+                        <h2 class="profession">Computer Science Student & Researcher</h2>
+                        <p class="lead" style="font-size: 1.5rem; color: #4a5568;">Junior in Computer Science and Technology at ShanghaiTech University, currently in the Visiting International Student Program (VISP) at University of Wisconsin-Madison.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./1.jpg" alt="Photo of Wentao Yang" class="img-fluid rounded profile-image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-me mt-5">
+                <h2 class="section-title">About Me</h2>
                 <div class="row">
-                    <div class="col-md-7">
-                        <p class="intromyself">My name is Wentao Yang, an exchange student from ShanghaiTech University, majoring in Computer Science.</p>
+                    <div class="col-md-8">
+                        <p class="about-text">I'm a third-year student from the Computer Science and Technology department at ShanghaiTech University, currently participating in the Visiting International Student Program (VISP) at University of Wisconsin-Madison. I'm passionate about data science, computer vision, and financial modeling, with a particular interest in how these technologies can improve society and business efficiency.</p>
+                        
+                        <p class="about-text">My academic journey has equipped me with a solid foundation in computer science while nurturing my curiosity for data-driven research. As part of my coursework, I've completed projects in predicting Weibo user interactions and developing methods for quadratic programming optimization. I enjoy the process of collecting data from different sources and applying computational techniques to uncover patterns that aren't easily observable.</p>
+                        
+                        <p class="about-text">Through my research experiences at the Mobile Perception Lab and Knowledge Computing Laboratory, I've developed skills in dataset creation, algorithm development, and model fine-tuning. I'm particularly drawn to applications that have tangible benefits, such as financial data analysis and object pose estimation.</p>
+                        
+                        <div class="education mt-4">
+                            <h3 class="subsection-title">Education</h3>
+                            <div class="education-item">
+                                <div class="d-flex justify-content-between">
+                                    <h4>ShanghaiTech University</h4>
+                                    <span>Sept. 2022 - Jun. 2026 (Expected)</span>
+                                </div>
+                                <p>Bachelor of Engineering in Computer Science and Technology</p>
+                                <!-- <p>GPA: 3.68/4.0</p> -->
+                            </div>
+                            <div class="education-item">
+                                <div class="d-flex justify-content-between">
+                                    <h4>University of Wisconsin-Madison</h4>
+                                    <span>Jan. 2025 - May 2025 (Expected)</span>
+                                </div>
+                                <p>Thematic Visiting International Student Program (VISP) in Computer Sciences</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-5">
-                        <img src="./1.jpg" alt="photo of Wentao Yang" class="img-fluid rounded" width="300" height="auto">
+                    <div class="col-md-4">
+                        <div class="interests-box">
+                            <h3 class="subsection-title">Research Interests</h3>
+                            <ul class="interests-list">
+                                <li><i class="fas fa-database"></i> Data Science & Mining</li>
+                                <li><i class="fas fa-laptop-code"></i> Computer Vision</li>
+                                <li><i class="fas fa-chart-line"></i> Financial Data Analysis</li>
+                                <li><i class="fas fa-robot"></i> Machine Learning</li>
+                                <li><i class="fas fa-cogs"></i> Algorithm Development</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-7">
-                        <p class="interests">My interests span diverse domains, including: </p>
-                        <ul class="interests_content">
-                            <li>sports (soccer and bowling)</li>
-                            <li>music (popular and rock)</li>
-                            <li>art (contemporary)</li>
-                        </ul>
+            
+            <section class="quick-links mt-5">
+                <h2 class="section-title">Quick Links</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="quick-link-card">
+                            <h3><i class="fas fa-code-branch"></i> Latest Project</h3>
+                            <p>Predicting the interactions of Weibo using the FRESH framework</p>
+                            <a href="projects.html" class="btn-link">View Projects</a>
+                        </div>
                     </div>
-                    <div class="col-md-5">
-                        <p class="icons">My icons are: </p>
-                        <ul class="icons_content">
-                            <li>JJ Lin (singer)</li>
-                            <li>Cristiano Ronaldo (soccer player)</li>
-                            <li>James Harden (basketball player)</li>
-                        </ul>
+                    <div class="col-md-4 mb-4">
+                        <div class="quick-link-card">
+                            <h3><i class="fas fa-flask"></i> Research</h3>
+                            <p>Working on object pose estimation and tracking in the Mobile Perception Lab</p>
+                            <a href="research.html" class="btn-link">Learn More</a>
+                        </div>
                     </div>
-                    <div class="col-md-7">
-                        <img src="./2.jpg" alt="photo of JJ Lin" class="img-fluid rounded" width="300" height="auto">
-                    </div>
-                    <div class="col-md-5">
-                        <img src="./3.jpg" alt="photo of Cristiano Ronaldo" class="img-fluid rounded" width="350" height="auto">
-                        <img src="./4.jpg" alt="photo of James Harden" class="img-fluid rounded" width="350" height="auto">
+                    <div class="col-md-4 mb-4">
+                        <div class="quick-link-card">
+                            <h3><i class="fas fa-file-alt"></i> Resume</h3>
+                            <p>Download my full resume to see my qualifications and experience</p>
+                            <a href="Wentao_Yang_CV.pdf" class="btn-link" target="_blank">Download CV</a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
+        
+        <footer id="contact" class="mt-5 py-4">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Contact Me</h2>
+                <div class="row">
+                    <div class="contact text-center mb-4">
+                        <div class="contact-info">
+                            <h3><i class="fas fa-envelope"></i> Email: &nbsp <a href="mailto:yangwt2022@shanghaitech.edu.cn">yangwt2022@shanghaitech.edu.cn</a></h3>
+                            <p class="mt-4">Feel free to reach out for research collaborations, project inquiries, or just to connect!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center mt-4">
+                    <p>&copy; 2025 Wentao Yang. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
