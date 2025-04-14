@@ -678,8 +678,10 @@
     color: var(--light-color);
     display: flex;
     align-items: center;
+    justify-content: center; /* 添加：水平居中 */
+    flex-wrap: wrap; /* 添加：允许换行 */
     margin-bottom: 0.75rem;
-  }
+}
   
   .contact-info p {
     margin-bottom: 1.5rem;
